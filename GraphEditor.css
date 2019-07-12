@@ -1,0 +1,180 @@
+.editor {
+    display:  block;
+    position: absolute;
+    height:   auto;
+    bottom:   20px;
+    top:    150px;
+    left:   10px;
+    right:    10px;
+    border: 1px solid;
+}
+
+.editor svg {
+    display:  block;
+    position: absolute;
+    height:   auto;
+    bottom:   20px;
+    top:    150px;
+    left:   10px;
+    right:    10px;
+    border: 1px solid;
+
+    overflow:   hidden;
+
+    background-color:   #800000;
+    cursor:         default;
+    -webkit-user-select:  none;
+    -moz-user-select:   none;
+    -ms-user-select:    none;
+    -o-user-select:     none;
+    user-select:      none;
+
+}
+
+.dragHandle {
+  cursor: pointer;
+}
+
+.node {
+  stroke-width:   5px;
+  stroke:      #f0f8ff;
+  cursor:       move;
+  fill:       #7fffd4;
+  opacity:      0.7;
+}
+
+.node.targeted {
+    stroke-width:   5px;
+    stroke:      #f0f8ff;
+    cursor:       move;
+    fill:       #7fffd4;
+    opacity:      0.7;
+    fill:  #ff00ff;
+    opacity:      1.0;
+}
+
+.nodelabel {
+  font:       12 sans-serif;
+  pointer-events:   none;
+  text-anchor:    middle;
+}
+
+.linklabel {
+  font:       12 sans-serif;
+  pointer-events:   none;
+  text-anchor:    middle;
+}
+
+.nodelabelbox-hidden {
+    fill:   none;
+}
+
+.nodelabelbox {
+    fill-opacity: 0;
+    stroke:     #ffffe0;
+    stroke-width:   5px;
+    cursor: move;
+}
+
+.nodemenu {
+      background:   #334455;
+      border:       3px solid #ffffff;
+      max-width:    300px;
+      display:      inline-block;
+      opacity:      0;
+      position:     absolute;
+      padding:      3px;
+      margin-top:   10px;
+      border-radius:  10px;
+      box-shadow:     0 0 7px #ffffff;
+
+      color:      #000000;
+      text-align:     center;
+      font-weight:    bold;
+      font-stretch:   condensed;
+      text-decoration:  none;
+
+
+}
+
+.nodemenu .buttonset {
+    background:   #334455;
+    border:       3px solid #000000;
+    max-width:    300px;
+    display:      inline-block;
+    opacity:      0;
+    position:     absolute;
+    padding:      3px;
+    margin-top:   10px;
+    border-radius:  10px;
+    box-shadow:     0 0 7px #cc4d4d;
+
+    color:      #000000;
+    text-align:     center;
+    font-weight:    bold;
+    font-stretch:   condensed;
+    text-decoration:  none;
+
+    width:     20px;
+
+}
+
+.nodemenu.active {
+      opacity:        1;
+      margin-top:       5px;
+      transition: opacity 0.8s ease;
+      -webkit-transition:   opacity 0.8s ease;
+      -moz-transition:    opacity 0.8s ease;
+      -ms-transition:     opacity 0.8s ease;
+      -o-transition:    opacity 0.8s ease;
+}
+
+.nodemenu.inactive {
+      opacity:        0;
+      transition: opacity 0.8s ease;
+      -webkit-transition: opacity 0.8s ease;
+      -moz-transition:    opacity 0.8s ease;
+      -ms-transition:     opacity 0.8s ease;
+      -o-transition:    opacity 0.8s ease;
+}
+
+.nodemenu .menubutton {
+  width:            20px;
+  height:           20px;
+  background-color: #00ff00;
+  color:            #ffffff;
+  padding: 0px;
+  border: none;
+}
+
+.nodemenu .menubutton:hover {
+    width:            20px;
+    height:           20px;
+    background-color: #00ff00;
+    color:            #ffffff;
+    padding: 0px;
+    border: none;
+    background-color: #fefefe;
+    color:            #f3f456;
+  }
+
+
+path.link {
+  fill: none;
+  stroke: #000;
+  stroke-width: 1px;
+  cursor: default;
+}
+
+path.link.selected {
+  stroke-dasharray: 10,2;
+}
+
+path.link.dragline {
+  pointer-events: none;
+}
+
+path.link.hidden {
+  stroke-width: 0;
+}
+

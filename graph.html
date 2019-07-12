@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <link rel="stylesheet" href="GraphEditor.css">
+     <script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
+     <script type="text/javascript" src="GraphEditor.js"></script>
+     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script>
+        //var element = window.document;
+        //var svg = element.getElementById('svg');
+        $( document ).ready(function() {
+            var editor = davidkel.grapheditor.create({/*element: svg,*/ /*'actionListener': actionListener,*/ 'nodeRadius': 50, 'fontSize': 10});
+            var data = {};
+            data.nodes = [
+            {
+                'metadataId': 'id1',
+                'label': 'node1',
+                'x': 100,
+                'y': 100
+            },
+            {
+                'metadataId': 'id2',
+                'label': 'node2',
+                'x': 200,
+                'y': 200
+            },
+            {
+                'metadataId': 'id3',
+                'label': 'node3',
+                'x': 300,
+                'y': 300
+            },
+            {
+                'metadataId': 'id4',
+                'label': 'node4',
+                'x': 400,
+                'y': 400
+            }
+
+
+
+            ];
+            editor.setData(data);
+
+        });
+      </script>
+   </head>
+   <body>
+     <p>Hello!</p>
+      <div id="editor" style="width:100%; height: 100%"></div>
+   </body>
+ </html>
+
+
+
